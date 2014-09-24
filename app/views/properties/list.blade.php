@@ -3,6 +3,8 @@
 
 @section('content')
 
+<h1>Fastigheter</h1>
+
 @if(count(properties) > 0)
 
 <table>

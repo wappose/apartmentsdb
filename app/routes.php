@@ -10,7 +10,6 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
 Route::get('user/login', 'UserController@getLogin');
 Route::post('user/login', 'UserController@postLogin');
 Route::get('user/remind', 'RemindersController@getRemind');
@@ -22,6 +21,7 @@ Route::get('user/logout', 'UserController@getLogout');
 
 Route::group(array('before' => 'auth'), function()
 {
+    Route::get('/', 'UserController@getLogin');
 //    Route::get('/dashboard', 'HomeController@getIndex');
     Route::resource('properties', 'PropertiesController');
     Route::resource('people', 'PeopleController');
