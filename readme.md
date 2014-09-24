@@ -1,3 +1,7 @@
+## Apartments DB
+
+This is an application to store apartment information and information about contract holders and so on... Written in PHP unsing the Laravel Framework, se belove
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
